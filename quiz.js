@@ -1,3 +1,4 @@
+
 // Load questions from the external questions.js file
 let questionsObject = {};
 questions.forEach((q) => (questionsObject[q.id] = q));
