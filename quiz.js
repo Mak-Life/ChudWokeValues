@@ -32,19 +32,19 @@ function init_question() {
 
     // Dynamically render question options based on the question type
     if (currentQuestion.type === "frequency") {
-        optionsContainer.innerHTML = `
-            <button onclick="next_question(1)">Always</button>
-            <button onclick="next_question(0.75)">Often</button>
-            <button onclick="next_question(0.5)">Sometimes</button>
-            <button onclick="next_question(0.25)">Rarely</button>
-            <button onclick="next_question(0)">Never</button>`;
+    optionsContainer.innerHTML = `
+        <button class="button" onclick="next_question(1)" style="background-color: #1b5e20;">Always</button> <br>
+        <button class="button" onclick="next_question(0.75)" style="background-color: #4caf50;">Often</button> <br>
+        <button class="button" onclick="next_question(0.5)" style="background-color: #bbbbbb;">Sometimes</button> <br>
+        <button class="button" onclick="next_question(0.25)" style="background-color: #f44336;">Rarely</button> <br>
+        <button class="button" onclick="next_question(0)" style="background-color: #b71c1c;">Never</button>`;
     } else {
         optionsContainer.innerHTML = `
-            <button onclick="next_question(1)">Strongly Agree</button>
-            <button onclick="next_question(0.5)">Agree</button>
-            <button onclick="next_question(0)">Neutral</button>
-            <button onclick="next_question(-0.5)">Disagree</button>
-            <button onclick="next_question(-1)">Strongly Disagree</button>`;
+            <button class="button" onclick="next_question(1)" style="background-color: #1b5e20;">Strongly Agree</button> <br>
+            <button class="button" onclick="next_question(0.5)" style="background-color: #4caf50;">Agree</button> <br>
+            <button class="button" onclick="next_question(0)" style="background-color: #bbbbbb;">Neutral</button> <br>
+            <button class="button" onclick="next_question(-0.5)" style="background-color: #f44336;">Disagree</button> <br>
+            <button class="button" onclick="next_question(-1)" style="background-color: #b71c1c;">Strongly Disagree</button>`;
     }
 
     // Show or hide the back button based on progress
