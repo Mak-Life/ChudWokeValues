@@ -1,1 +1,1 @@
-SapplyValues is a clone of the Sapply political compass, made to use 8values' UI.
+ChudWokeValues is a test based upon the SapplyValues test.
