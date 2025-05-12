@@ -1,5 +1,5 @@
 questions =  [
-    {"id": 0, "question": "Freedom of business is the best practical way a society can prosper.", "effects": {"right": 1}},
+    {"id": 0, "question": "Big Chungus.", "effects": {"right": 1}},
     {"id": 1, "question": "Charity is a better way of helping those in need than social welfare.", "effects": {"right": 1}},
     {"id": 2, "question": "Wages are always fair, as employers know best what a worker's labour is worth.", "effects": {"right": 1}},
     {"id": 3, "question": "It is \"human nature\" to be greedy.", "effects": {"right": 1}},
