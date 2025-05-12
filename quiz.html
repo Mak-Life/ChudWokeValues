@@ -16,10 +16,12 @@
     <hr>
     <h2 style="text-align:center;" id="question-number">Loading...</h2>
     <p class="question" id="question-text"></p>
-    <button class="button" style="background-color: #2196f3;">Test Button</button>
 
     <!-- Placeholder for dynamically generated question options -->
     <div id="question-options"></div>
+
+    <!-- Invisible Button to Ensure Styles Load -->
+    <button class="button" style="visibility: hidden; position: absolute;">Invisible Button</button>
 
     <!-- Navigation buttons -->
     <button class="small_button" onclick="prev_question()" id="back_button">Back</button>
@@ -27,6 +29,6 @@
 
     <!-- Link to external JavaScript -->
     <script src="questions.js"></script>
-    <script type="application/javascript" src="quiz.js"></script>
+    <script src="quiz.js"></script>
 </body>
 </html>
