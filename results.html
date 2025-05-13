@@ -55,7 +55,7 @@
     
                 var dot = c.getContext("2d");
                 dot.beginPath();
-                dot.arc(200 + (1000 * (x_axis+10)/20), 1150 - (1000 * (y_axis + 10)/20), 25, 0, 2 * Math.PI);
+                dot.arc(150 + (1000 * (x_axis+10)/20), 1150 - (1000 * (y_axis + 10)/20), 25, 0, 2 * Math.PI);
                 dot.fillStyle = 'red';
                 dot.fill();
                 dot.stroke();
@@ -63,11 +63,11 @@
                 ctx.font="50px Montserrat"
                 ctx.textAlign="center"
                 ctx.fillStyle="#222222"
-                ctx.fillText("Left / Right Axis (x): " + x_axis, 725, 1375)
-                ctx.fillText("Auth / Lib Axis (y): " + y_axis, 725, 1450)
+                ctx.fillText("Left / Right Axis (x): " + x_axis, 650, 1375)
+                ctx.fillText("Auth / Lib Axis (y): " + y_axis, 650, 1450)
                 ctx.textAlign="right"
                 ctx.font="60px Montserrat"
-                ctx.fillText("SapplyValues.github.io", 1820, 1560)
+                ctx.fillText("SapplyValues.github.io", 1270, 1560)
     
                 document.getElementById("banner").src = c.toDataURL();
             }
