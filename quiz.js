@@ -84,14 +84,19 @@ function calculate_results() {
     // Store answers in session storage
     sessionStorage.setItem("answers", JSON.stringify(answers));
 
-    // Perform percentage calculation and redirect to results page
+    // Perform percentage calculation
     const percentages = percentageCalculation();
     sessionStorage.setItem("percentages", JSON.stringify(percentages));
 
+    // Prepare arguments for query string
     let args = Object.entries(percentages)
         .map(([key, value]) => `${key}=${value}`)
         .join("&");
-    location.href = "results.html?" + args;
+
+    // Redirect to feedback.html or results.html
+    const isHostedOnGitHub = window.location.hostname === "mak-life.github.io";
+    const nextPage = isHostedOnGitHub ? "feedback.html" : "results.html";
+    location.href = `${nextPage}?${args}`;
 }
 
 function percentageCalculation() {
