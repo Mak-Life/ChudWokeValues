@@ -95,7 +95,8 @@ function calculate_results() {
 
     // Redirect to feedback.html or results.html
     const isHostedOnGitHub = window.location.hostname === "mak-life.github.io";
-    const nextPage = isHostedOnGitHub ? "feedback.html" : "results.html";
+    // const nextPage = isHostedOnGitHub ? "feedback.html" : "results.html";
+    const nextPage = "results.html";
     location.href = `${nextPage}?${args}`;
 }
 
