@@ -39,6 +39,12 @@ function init_question() {
             <button class="button" onclick="next_question(0.25)" style="background-color: #f44336;">Rarely</button> <br>
             <button class="button" onclick="next_question(0)" style="background-color: #b71c1c;">Never</button>`;
         } 
+    elif (currentQuestion.type === "behavedescription") {
+        optionsContainer.innerHTML = `
+            <button class="button" onclick="next_question(-1)" style="background-color: #4e9dba;">Judgemental</button> <br>
+            <button class="button" onclick="next_question(1)" style="background-color: #af4b7a;">Abrasive</button> <br>
+            <button class="button" onclick="next_question(0)" style="background-color: #bbbbbb;">Neither of these</button>`;
+        } 
     else {
         optionsContainer.innerHTML = `
             <button class="button" onclick="next_question(1)" style="background-color: #1b5e20;">Strongly Agree</button> <br>
