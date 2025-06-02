@@ -45,6 +45,64 @@ function init_question() {
             <button class="button" onclick="next_question(1)" style="background-color: #af4b7a;">Abrasive</button> <br>
             <button class="button" onclick="next_question(0)" style="background-color: #bbbbbb;">Neither of these</button>`;
         } 
+    else if (currentQuestion.type === "gendernumbers") {
+        optionsContainer.innerHTML = `
+            <button class="button" onclick="next_question(-1)" style="background-color: #4e9dba;">Only two.</button> <br>
+            <button class="button" onclick="next_question(1)" style="background-color: #F5CB5C;">At least three. Don't play games with me kid</button> <br>
+            <button class="button" onclick="next_question(2)" style="background-color: #AF4B7A;">Double digits or more.</button> <br>
+            <button class="button" onclick="next_question(0)" style="background-color: #bbbbbb;">I don't like any of these options</button>`;
+        } 
+    else if (currentQuestion.type === "womandress") {
+        optionsContainer.innerHTML = `
+            <button class="button" onclick="next_question(1)" style="background-color: #F5CB5C;">Traditional</button> <br>
+            <button class="button" onclick="next_question(-1)" style="background-color: #af4b7a;">Alternative</button> <br>
+            <button class="button" onclick="next_question(-1)" style="background-color: #4E9DBA;">Masculine</button> <br>
+            <button class="button" onclick="next_question(0)" style="background-color: #bbbbbb;">None of these</button>`;
+        } 
+    else if (currentQuestion.type === "womanhair") {
+        optionsContainer.innerHTML = `
+            <button class="button" onclick="next_question(0)" style="background-color: #bbbbbb;">Not a Woman / None of these</button> <br>
+            <button class="button" onclick="next_question(1)" style="background-color: #f5cc5c;">Shorter than a bob</button> <br>
+            <button class="button" onclick="next_question(0.5)" style="background-color: #f7a45c;">Bob or Lob</button> <br>
+            <button class="button" onclick="next_question(0)" style="background-color: #ec7f66;">Shoulder to mid-back</button> <br>
+            <button class="button" onclick="next_question(-0.5)" style="background-color: #d36072;">Waist to butt</button> <br>
+            <button class="button" onclick="next_question(-1)" style="background-color: #af4b7a;">Longer than butt</button>`;
+        }
+    else if (currentQuestion.type === "manhair") {
+        optionsContainer.innerHTML = `
+            <button class="button" onclick="next_question(0)" style="background-color: #bbbbbb;">Not a Man / None of these</button> <br>
+            <button class="button" onclick="next_question(-1)" style="background-color: #F5CB5C;">Man Bun</button> <br>
+            <button class="button" onclick="next_question(1)" style="background-color: #F44336;">Shaved sides, short-to-medium top</button>`;
+        } 
+    else if (currentQuestion.type === "manwomenfriends") {
+        optionsContainer.innerHTML = `
+            <button class="button" onclick="next_question(0)" style="background-color: #bbbbbb;">Not a Man</button> <br>
+            <button class="button" onclick="next_question(1)" style="background-color: #F5CB5C;">No women friends</button> <br>
+            <button class="button" onclick="next_question(0)" style="background-color: #af4b7a;">Woman friend/s, but only online</button> <br>
+            <button class="button" onclick="next_question(-0.5)" style="background-color: #af4b7a;">One woman friend in real life</button> <br>
+            <button class="button" onclick="next_question(-1)" style="background-color: #4E9DBA;">Multiple women friends in real life</button> <br>`;
+        } 
+    else if (currentQuestion.type === "dyedhair") {
+        optionsContainer.innerHTML = `
+            <button class="button" onclick="next_question(1)" style="background-color: #4e9dba;">Yes, in non-standard colours</button> <br>
+            <button class="button" onclick="next_question(-1)" style="background-color: #4e9dba;">Yes, dyed blonde</button> <br>
+            <button class="button" onclick="next_question(0)" style="background-color: #4e9dba;">Yes, highlights</button> <br>
+            <button class="button" onclick="next_question(-0.5)" style="background-color: #af4b7a;">No</button> <br>`;
+        } 
+    else if (currentQuestion.type === "cityvsrural") {
+        optionsContainer.innerHTML = `
+            <button class="button" onclick="next_question(1)" style="background-color: #4e9dba;">The city.</button> <br>
+            <button class="button" onclick="next_question(-2)" style="background-color: #af4b7a;">The suburbs.</button> <br>
+            <button class="button" onclick="next_question(-1)" style="background-color: #bbbbbb;">The countryside.</button>`;
+        } 
+    else if (currentQuestion.type === "religion") {
+        optionsContainer.innerHTML = `
+            <button class="button" onclick="next_question(1)" style="background-color: #4f9eba;">Actively religious.</button> <br>
+            <button class="button" onclick="next_question(0.5)" style="background-color: #6888c3;">Religious, but rarely active.</button> <br>
+            <button class="button" onclick="next_question(-0.5)" style="background-color: #946baf;">Agnostic.</button> <br>
+            <button class="button" onclick="next_question(-1)" style="background-color: #af4b7a;">Atheist/Anti-theist.</button> <br>
+            <button class="button" onclick="next_question(-2)" style="background-color: #bbbbbb;">I don't know.</button>`;
+        } 
     else {
         optionsContainer.innerHTML = `
             <button class="button" onclick="next_question(1)" style="background-color: #1b5e20;">Strongly Agree</button> <br>
