@@ -84,9 +84,10 @@ function init_question() {
         } 
     else if (currentQuestion.type === "dyedhair") {
         optionsContainer.innerHTML = `
-            <button class="button" onclick="next_question(1)" style="background-color: #4e9dba;">Yes, in non-standard colours</button> <br>
-            <button class="button" onclick="next_question(-1)" style="background-color: #4e9dba;">Yes, dyed blonde</button> <br>
-            <button class="button" onclick="next_question(0)" style="background-color: #4e9dba;">Yes, highlights</button> <br>
+            <button class="button" onclick="next_question(1)" style="background-color: #4e9dba;">Dyed in non-standard colours</button> <br>
+            <button class="button" onclick="next_question(-1)" style="background-color: #4e9dba;">Dyed blonde</button> <br>
+            <button class="button" onclick="next_question(0)" style="background-color: #4e9dba;">Highlights</button> <br>
+            <button class="button" onclick="next_question(-0.75)" style="background-color: #4e9dba;">Dyed natural</button> <br>
             <button class="button" onclick="next_question(-0.5)" style="background-color: #af4b7a;">No</button> <br>`;
         } 
     else if (currentQuestion.type === "cityvsrural") {
