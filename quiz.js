@@ -48,8 +48,8 @@ function init_question() {
     else if (currentQuestion.type === "gendernumbers") {
         optionsContainer.innerHTML = `
             <button class="button" onclick="next_question(-1)" style="background-color: #4e9dba;">Only two.</button> <br>
-            <button class="button" onclick="next_question(1)" style="background-color: #F5CB5C;">At least three. Don't play games with me kid</button> <br>
-            <button class="button" onclick="next_question(2)" style="background-color: #AF4B7A;">Double digits or more.</button> <br>
+            <button class="button" onclick="next_question(0.75)" style="background-color: #F5CB5C;">At least three. Don't play games with me kid</button> <br>
+            <button class="button" onclick="next_question(1)" style="background-color: #AF4B7A;">Double digits or more.</button> <br>
             <button class="button" onclick="next_question(0)" style="background-color: #bbbbbb;">I don't like any of these options</button>`;
         } 
     else if (currentQuestion.type === "womandress") {
@@ -93,8 +93,8 @@ function init_question() {
     else if (currentQuestion.type === "cityvsrural") {
         optionsContainer.innerHTML = `
             <button class="button" onclick="next_question(1)" style="background-color: #4e9dba;">The city.</button> <br>
-            <button class="button" onclick="next_question(-2)" style="background-color: #af4b7a;">The suburbs.</button> <br>
-            <button class="button" onclick="next_question(-1)" style="background-color: #bbbbbb;">The countryside.</button>`;
+            <button class="button" onclick="next_question(-1)" style="background-color: #af4b7a;">The suburbs.</button> <br>
+            <button class="button" onclick="next_question(-0.5)" style="background-color: #bbbbbb;">The countryside.</button>`;
         } 
     else if (currentQuestion.type === "religion") {
         optionsContainer.innerHTML = `
@@ -102,7 +102,7 @@ function init_question() {
             <button class="button" onclick="next_question(0.5)" style="background-color: #6888c3;">Religious, but rarely active.</button> <br>
             <button class="button" onclick="next_question(-0.5)" style="background-color: #946baf;">Agnostic.</button> <br>
             <button class="button" onclick="next_question(-1)" style="background-color: #af4b7a;">Atheist/Anti-theist.</button> <br>
-            <button class="button" onclick="next_question(-2)" style="background-color: #bbbbbb;">I don't know.</button>`;
+            <button class="button" onclick="next_question(0)" style="background-color: #bbbbbb;">Unsure/Other</button>`;
         } 
     else {
         optionsContainer.innerHTML = `
