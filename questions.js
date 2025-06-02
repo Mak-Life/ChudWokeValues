@@ -30,7 +30,7 @@ questions =  [
     {"id": 28, "question": "People describe me as...", "effects": {"acts": 3}, "type": "behavedescription"},
     {"id": 29, "question": "(Women only) I dress...", "effects": {"acts": 1}, "type": "womandress"},
     {"id": 30, "question": "(Women only) My hair is...", "effects": {"acts": 1}, "type": "womanhair"},
-    {"id": 31, "question": "(Men only) I have...", "effects": {"acts": 1}, "type": "mandress"},
+    {"id": 31, "question": "(Men only) I have...", "effects": {"acts": 1}, "type": "manhair"},
     {"id": 32, "question": "(Men only) I have...", "effects": {"acts": 1}, "type": "manwomenfriends"},
     {"id": 33, "question": "My hair is dyed.", "effects": {"acts": -1}, "type": "dyedhair"},
     {"id": 34, "question": "I prefer...", "effects": {"acts": -1}, "type": "cityvsrural"},
