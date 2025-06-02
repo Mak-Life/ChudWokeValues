@@ -170,14 +170,21 @@ function percentageCalculation() {
     let percentages = {};
 
     // Initialize scores and max
-    for (const id in answers) {
+    for (const id in questionsObject) {
         for (const effect in questionsObject[id].effects) {
             max[effect] = max[effect] || 0;
-            scores[effect] = scores[effect] || 0;
 
-            const weight = questionsObject[id].effects[effect];
-            max[effect] += Math.abs(weight);
-            scores[effect] += answers[id] * weight;
+            // Consider only answered questions or apply default for skipped gender-specific ones
+            if (answers.hasOwnProperty(id)) {
+                const weight = questionsObject[id].effects[effect];
+                scores[effect] = scores[effect] || 0;
+                max[effect] += Math.abs(weight);
+                scores[effect] += answers[id] * weight;
+            } else if (isGenderSpecificQuestion(id)) {
+                const weight = questionsObject[id].effects[effect];
+                max[effect] += Math.abs(weight); // Include weight in max
+                scores[effect] = scores[effect] || 0; // Optionally adjust this for a neutral score
+            }
         }
     }
 
@@ -188,4 +195,10 @@ function percentageCalculation() {
     }
 
     return percentages;
+}
+
+// Helper function to identify gender-specific questions
+function isGenderSpecificQuestion(id) {
+    const question = questionsObject[id];
+    return question.question.includes("(Women only)") || question.question.includes("(Men only)");
 }
