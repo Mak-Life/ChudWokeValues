@@ -18,7 +18,7 @@ questions =  [
     {"id": 16, "question": "Nationalism good.", "effects": {"is": 1}, "type": "default"},
     {"id": 17, "question": "Globalism bad.", "effects": {"is": 1}, "type": "default"},
     {"id": 18, "question": "Globalism good.", "effects": {"is": -1}, "type": "default"},
-    {"id": 19, "question": "Animals deserve certain universal rights.", "effects": {"is": 1}, "type": "default"},
+    {"id": 19, "question": "Animals deserve certain universal rights.", "effects": {"is": -1}, "type": "default"},
     {"id": 20, "question": "The death penalty should exist for certain crimes.", "effects": {"is": 1}, "type": "default"},
     {"id": 21, "question": "Homosexuality is against my values.", "effects": {"is": 1}, "type": "default"},
     {"id": 22, "question": "Homosexuality is against my values.", "effects": {"is": 1}, "type": "default"},
