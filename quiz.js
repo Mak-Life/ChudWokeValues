@@ -184,8 +184,14 @@ function percentageCalculation() {
 
     // Calculate percentages
     for (const effect in max) {
-        percentages[effect] =
-            max[effect] > 0 ? ((scores[effect] * 10) / max[effect]).toFixed(2) : 0;
+        if (effect === "acts") {
+            // Adjust calculation for 'acts' effect
+            percentages[effect] = max[effect] > 2 
+                ? ((scores[effect] * 10) / (max[effect] - 2)).toFixed(2) : 0; // Avoid division by zero or negative values
+        } else {
+            percentages[effect] = max[effect] > 0 
+                ? ((scores[effect] * 10) / max[effect]).toFixed(2) : 0;
+        }
     }
 
     return percentages;
