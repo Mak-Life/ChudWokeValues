@@ -185,9 +185,9 @@ function percentageCalculation() {
     // Calculate percentages
     for (const effect in max) {
         if (effect === "acts") {
-            // Adjust calculation for 'acts' effect
+            // account for gender specific questions
             percentages[effect] = max[effect] > 2 
-                ? ((scores[effect] * 10) / (max[effect] - 2)).toFixed(2) : 0; // Avoid division by zero or negative values
+                ? ((scores[effect] * 10) / (max[effect] - 2)).toFixed(2) : 0;
         } else {
             percentages[effect] = max[effect] > 0 
                 ? ((scores[effect] * 10) / max[effect]).toFixed(2) : 0;
