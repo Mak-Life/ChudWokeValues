@@ -54,10 +54,12 @@ function init_question() {
         } 
     else if (currentQuestion.type === "womandress") {
         optionsContainer.innerHTML = `
+            <button class="button" onclick="next_question(0)" style="background-color: #bbbbbb;">Not a Woman / None of these</button> <br>
+            <button class="button" onclick="next_question(0)" style="background-color: #4caf50;">Average</button>
             <button class="button" onclick="next_question(1)" style="background-color: #F5CB5C;">Traditional</button> <br>
             <button class="button" onclick="next_question(-1)" style="background-color: #af4b7a;">Alternative</button> <br>
-            <button class="button" onclick="next_question(-1)" style="background-color: #4E9DBA;">Masculine</button> <br>
-            <button class="button" onclick="next_question(0)" style="background-color: #bbbbbb;">None of these</button>`;
+            <button class="button" onclick="next_question(-1)" style="background-color: #4E9DBA;">Masculine</button>
+            <button class="button" onclick="next_question(-2)" style="background-color: #f44336;">Pantsuit</button>`;
         } 
     else if (currentQuestion.type === "womanhair") {
         optionsContainer.innerHTML = `
@@ -77,17 +79,17 @@ function init_question() {
     else if (currentQuestion.type === "manwomenfriends") {
         optionsContainer.innerHTML = `
             <button class="button" onclick="next_question(0)" style="background-color: #bbbbbb;">Not a Man</button> <br>
-            <button class="button" onclick="next_question(1)" style="background-color: #F5CB5C;">No women friends</button> <br>
-            <button class="button" onclick="next_question(0)" style="background-color: #af4b7a;">Woman friend/s, but only online</button> <br>
-            <button class="button" onclick="next_question(-0.5)" style="background-color: #af4b7a;">One woman friend in real life</button> <br>
-            <button class="button" onclick="next_question(-1)" style="background-color: #4E9DBA;">Multiple women friends in real life</button> <br>`;
+            <button class="button" onclick="next_question(1)" style="background-color: #b71c1c;">No women friends</button> <br>
+            <button class="button" onclick="next_question(0)" style="background-color: #f44336;">Woman friend/s, but only online</button> <br>
+            <button class="button" onclick="next_question(-0.5)" style="background-color: #4caf50;">One woman friend in real life</button> <br>
+            <button class="button" onclick="next_question(-1)" style="background-color: #1b5e20;">Multiple women friends in real life</button> <br>`;
         } 
     else if (currentQuestion.type === "dyedhair") {
         optionsContainer.innerHTML = `
             <button class="button" onclick="next_question(1)" style="background-color: #4e9dba;">Dyed in non-standard colours</button> <br>
-            <button class="button" onclick="next_question(-1)" style="background-color: #4e9dba;">Dyed blonde</button> <br>
-            <button class="button" onclick="next_question(0)" style="background-color: #4e9dba;">Highlights</button> <br>
-            <button class="button" onclick="next_question(-0.75)" style="background-color: #4e9dba;">Dyed natural</button> <br>
+            <button class="button" onclick="next_question(-1)" style="background-color: #F5CB5C;">Dyed blonde</button> <br>
+            <button class="button" onclick="next_question(0)" style="background-color: #4caf50;">Highlights</button> <br>
+            <button class="button" onclick="next_question(-0.75)" style="background-color: #f44336;">Dyed natural</button> <br>
             <button class="button" onclick="next_question(-0.5)" style="background-color: #af4b7a;">No</button> <br>`;
         } 
     else if (currentQuestion.type === "cityvsrural") {
