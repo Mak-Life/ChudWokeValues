@@ -7,7 +7,7 @@ questions =  [
     {"id": 5, "question": "Fundamentally, our society is sexist and patriarchal, and this is a bad thing.", "effects": {"is": -2}, "type": "default"},
     {"id": 6, "question": "Abortion should be legal in all circumstances.", "effects": {"is": -1}, "type": "default"},
     {"id": 7, "question": "Gender is a social construct, not a natural state of affairs.", "effects": {"is": -1}, "type": "default"},
-    {"id": 8, "question": "How many genders are there?", "effects": {"is": -1}, "type": "gendernumbers"},
+    {"id": 8, "question": "How many genders are there?", "effects": {"is": -1}, "type": "gendernumbers"}, 
     {"id": 9, "question": "Transgender people are the gender they say they are.", "effects": {"is": -1}, "type": "default"},
     {"id": 10, "question": "Men should hold a position of power over women in society.", "effects": {"is": 1}, "type": "default"},
     {"id": 11, "question": "Gender should be abolished.", "effects": {"is": -1}, "type": "default"},
