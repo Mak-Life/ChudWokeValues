@@ -104,6 +104,12 @@ function init_question() {
             <button class="button" onclick="next_question(-1)" style="background-color: #af4b7a;">Atheist/Anti-theist.</button> <br>
             <button class="button" onclick="next_question(0)" style="background-color: #bbbbbb;">Unsure/Other</button>`;
         } 
+    else if (currentQuestion.type === "partner") {
+        optionsContainer.innerHTML = `
+            <button class="button" onclick="next_question(1)" style="background-color: #1b5e20;">The same race.</button> <br>
+            <button class="button" onclick="next_question(0)" style="background-color: #bbbbbb;">I am single.</button> <br>
+            <button class="button" onclick="next_question(-1)" style="background-color: #b71c1c;">A different race.</button>`;
+        } 
     else {
         optionsContainer.innerHTML = `
             <button class="button" onclick="next_question(1)" style="background-color: #1b5e20;">Strongly Agree</button> <br>
