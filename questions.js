@@ -34,7 +34,7 @@ questions =  [
     {"id": 32, "question": "I think it's particularly offensive for people to say slurs.", "effects": {"acts": -1}, "type": "default"},
     {"id": 33, "question": "Telling somebody to kill themselves crosses a line.", "effects": {"acts": -1}, "type": "default"},
     {"id": 34, "question": "Online harassment or cancellation is a serious issue.", "effects": {"acts": -1}, "type": "default"},
-    {"id": 35, "question": "People describe me as...", "effects": {"acts": 1}, "type": "behavedescription"},
+    {"id": 35, "question": "People describe me as...", "effects": {"acts": 3}, "type": "behavedescription"},
     {"id": 36, "question": "(Women only) I dress...", "effects": {"acts": 1}, "type": "womandress"},
     {"id": 37, "question": "(Women only) My hair is...", "effects": {"acts": -1}, "type": "womanhair"},
     {"id": 38, "question": "(Men only) I have...", "effects": {"acts": 1}, "type": "manhair"},
