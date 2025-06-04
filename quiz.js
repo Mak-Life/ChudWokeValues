@@ -55,10 +55,10 @@ function init_question() {
     else if (currentQuestion.type === "womandress") {
         optionsContainer.innerHTML = `
             <button class="button" onclick="next_question(0)" style="background-color: #bbbbbb;">Not a Woman / None of these</button> <br>
-            <button class="button" onclick="next_question(0)" style="background-color: #4caf50;">Average</button>
+            <button class="button" onclick="next_question(0)" style="background-color: #4caf50;">Average</button> <br>
             <button class="button" onclick="next_question(1)" style="background-color: #F5CB5C;">Traditional</button> <br>
             <button class="button" onclick="next_question(-1)" style="background-color: #af4b7a;">Alternative</button> <br>
-            <button class="button" onclick="next_question(-1)" style="background-color: #4E9DBA;">Masculine</button>
+            <button class="button" onclick="next_question(-1)" style="background-color: #4E9DBA;">Masculine</button> <br>
             <button class="button" onclick="next_question(-2)" style="background-color: #f44336;">Pantsuit</button>`;
         } 
     else if (currentQuestion.type === "womanhair") {
@@ -82,7 +82,13 @@ function init_question() {
             <button class="button" onclick="next_question(1)" style="background-color: #b71c1c;">No women friends</button> <br>
             <button class="button" onclick="next_question(0)" style="background-color: #f44336;">Woman friend/s, but only online</button> <br>
             <button class="button" onclick="next_question(-0.5)" style="background-color: #4caf50;">One woman friend in real life</button> <br>
-            <button class="button" onclick="next_question(-1)" style="background-color: #1b5e20;">Multiple women friends in real life</button> <br>`;
+            <button class="button" onclick="next_question(-1)" style="background-color: #1b5e20;">Multiple women friends in real life</button>`;
+        }
+    else if (currentQuestion.type === "nbname") {
+        optionsContainer.innerHTML = `
+            <button class="button" onclick="next_question(0)" style="background-color: #bbbbbb;">Not Non-binary / None of these</button> <br>
+            <button class="button" onclick="next_question(1)" style="background-color: #4caf50;">A more traditional name, like Alex</button> <br>
+            <button class="button" onclick="next_question(-1)" style="background-color: #f44336;">A more experimental name, like Sock</button>`;
         } 
     else if (currentQuestion.type === "dyedhair") {
         optionsContainer.innerHTML = `
@@ -90,7 +96,7 @@ function init_question() {
             <button class="button" onclick="next_question(-1)" style="background-color: #F5CB5C;">Dyed blonde</button> <br>
             <button class="button" onclick="next_question(0)" style="background-color: #4caf50;">Highlights</button> <br>
             <button class="button" onclick="next_question(-0.75)" style="background-color: #f44336;">Dyed natural</button> <br>
-            <button class="button" onclick="next_question(-0.5)" style="background-color: #af4b7a;">No</button> <br>`;
+            <button class="button" onclick="next_question(-0.5)" style="background-color: #af4b7a;">No</button>`;
         } 
     else if (currentQuestion.type === "cityvsrural") {
         optionsContainer.innerHTML = `
