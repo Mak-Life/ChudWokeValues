@@ -1,6 +1,6 @@
 questions =  [
 	{"id": 0, "question": "It is immoral for a country to invade and/or claim another land for resources.", "effects": {"is": -1}, "type": "default"},
-    {"id": 1, "question": "Many of the colonized benefited from Colonialism.", "effects": {"is": 1}, "type": "default"},
+    {"id": 1, "question": "Many of the colonized benefited from colonialism.", "effects": {"is": 1}, "type": "default"},
     {"id": 2, "question": "People should be treated equally, regardless of race, gender, or creed.", "effects": {"is": -1}, "type": "default"},
     {"id": 3, "question": "Races are scientific reality.", "effects": {"is": 1}, "type": "default"},
     {"id": 4, "question": "There is racial inequality in society that disadvantages certain groups, and we should address it.", "effects": {"is": -1}, "type": "default"},
