@@ -57,5 +57,5 @@ questions =  [
     {"id": 55, "question": "It's good when companies publicly support progressive social causes.", "effects": {"acts": -1}, "type": "default"},
     {"id": 56, "question": "I support doing land acknowledgements.", "effects": {"acts": -1}, "type": "default"},
     {"id": 57, "question": "My country or people should apologize for crimes and wrongdoing our ancestors have committed.", "effects": {"acts": -1}, "type": "default"},
-    {"id": 58, "question": "I respect people's neopronouns or xenogenders.", "effects": {"acts": -1}, "type": "default"},
+    {"id": 58, "question": "I respect people's neopronouns or xenogenders.", "effects": {"acts": -1}, "type": "default"}, 
 ];
