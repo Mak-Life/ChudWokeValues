@@ -142,6 +142,15 @@ function init_question() {
             <button class="button" onclick="next_question(-1)" style="background-color: #b71c1c;">Almost none</button> <br>
             <button class="button" onclick="next_question(1)" style="background-color: #bbbbbb;">I don't plan on having children.</button>`;
         } 
+    else if (currentQuestion.type === "nbsoc") {
+        optionsContainer.innerHTML = `
+            <button class="button" onclick="next_question(0)" style="background-color: #bbbbbb;">Not Non-binary</button> <br>
+            <button class="button" onclick="next_question(1)" style="background-color: #1b5e20;">Strongly Agree</button> <br>
+            <button class="button" onclick="next_question(0.5)" style="background-color: #4caf50;">Agree</button> <br>
+            <button class="button" onclick="next_question(0)" style="background-color: #bbbbbb;">Neutral</button> <br>
+            <button class="button" onclick="next_question(-0.5)" style="background-color: #f44336;">Disagree</button> <br>
+            <button class="button" onclick="next_question(-1)" style="background-color: #b71c1c;">Strongly Disagree</button>`;
+        } 
     else {
         optionsContainer.innerHTML = `
             <button class="button" onclick="next_question(1)" style="background-color: #1b5e20;">Strongly Agree</button> <br>
