@@ -45,7 +45,7 @@ questions =  [
     {"id": 43, "question": "(Men only) I have...", "effects": {"acts": 1}, "type": "manwomenfriends"},
     {"id": 44, "question": "(Men only) How much of the domestic labour - childcare, cooking, cleaning - do you/would you do in a relationship?", "effects": {"acts": -1}, "type": "childcaremen"},
     {"id": 45, "question": "(Non-binary only) My name is...", "effects": {"acts": 2}, "type": "nbname"},
-    {"id": 46, "question": "(Non-binary only) I regularly use social media.", "effects": {"acts": -1}, "type": "default"},
+    {"id": 46, "question": "(Non-binary only) I regularly use social media.", "effects": {"acts": -1}, "type": "nbsoc"},
     {"id": 47, "question": "My hair is dyed.", "effects": {"acts": -1}, "type": "dyedhair"},
     {"id": 48, "question": "I am publicly out as LGBT.", "effects": {"acts": -1}, "type": "default"},
     {"id": 49, "question": "I celebrate, or strongly support, Pride Month.", "effects": {"acts": -1}, "type": "default"},
