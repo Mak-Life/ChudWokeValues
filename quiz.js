@@ -4,7 +4,7 @@ questions.forEach((q) => (questionsObject[q.id] = q));
 
 let answers = {}; // Store user answers
 let questionsOrder = Object.keys(questionsObject); // Define question order
-let qn = 0; // Current question index
+let qn = 0; // Current question index 
 
 // Shuffle questions if needed
 const urlParams = new URLSearchParams(window.location.search);
