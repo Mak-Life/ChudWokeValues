@@ -118,6 +118,30 @@ function init_question() {
             <button class="button" onclick="next_question(0)" style="background-color: #bbbbbb;">I am single.</button> <br>
             <button class="button" onclick="next_question(-1)" style="background-color: #b71c1c;">A different race.</button>`;
         } 
+    else if (currentQuestion.type === "university") {
+        optionsContainer.innerHTML = `
+            <button class="button" onclick="next_question(1)" style="background-color: #4f9eba;">A prestigious school.</button> <br>
+            <button class="button" onclick="next_question(0.5)" style="background-color: #6888c3;">A regular university.</button> <br>
+            <button class="button" onclick="next_question(-0.5)" style="background-color: #946baf;">A trade school.</button> <br>
+            <button class="button" onclick="next_question(-1)" style="background-color: #af4b7a;">I did not/will not attend college.</button> <br>
+            <button class="button" onclick="next_question(0)" style="background-color: #bbbbbb;">Unsure/Other</button>`;
+        } 
+    else if (currentQuestion.type === "childcarewomen") {
+        optionsContainer.innerHTML = `
+            <button class="button" onclick="next_question(1)" style="background-color: #1b5e20;">Almost all</button> <br>
+            <button class="button" onclick="next_question(0.5)" style="background-color: #4caf50;">Most</button> <br>
+            <button class="button" onclick="next_question(-0.5)" style="background-color: #f44336;">Half</button> <br>
+            <button class="button" onclick="next_question(-0.75)" style="background-color: #b71c1c;">Almost none</button> <br>
+            <button class="button" onclick="next_question(-1)" style="background-color: #bbbbbb;">I don't plan on having children.</button>`;
+        } 
+    else if (currentQuestion.type === "childcaremen") {
+        optionsContainer.innerHTML = `
+            <button class="button" onclick="next_question(1)" style="background-color: #1b5e20;">Almost all</button> <br>
+            <button class="button" onclick="next_question(0.75)" style="background-color: #4caf50;">Half or more</button> <br>
+            <button class="button" onclick="next_question(-0.5)" style="background-color: #f44336;">A bit</button> <br>
+            <button class="button" onclick="next_question(-1)" style="background-color: #b71c1c;">Almost none</button> <br>
+            <button class="button" onclick="next_question(1)" style="background-color: #bbbbbb;">I don't plan on having children.</button>`;
+        } 
     else {
         optionsContainer.innerHTML = `
             <button class="button" onclick="next_question(1)" style="background-color: #1b5e20;">Strongly Agree</button> <br>
