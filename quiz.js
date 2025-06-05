@@ -128,6 +128,7 @@ function init_question() {
         } 
     else if (currentQuestion.type === "childcarewomen") {
         optionsContainer.innerHTML = `
+            <button class="button" onclick="next_question(0)" style="background-color: #bbbbbb;">Not a Woman</button> <br>
             <button class="button" onclick="next_question(1)" style="background-color: #1b5e20;">Almost all</button> <br>
             <button class="button" onclick="next_question(0.5)" style="background-color: #4caf50;">Most</button> <br>
             <button class="button" onclick="next_question(-0.5)" style="background-color: #f44336;">Half</button> <br>
@@ -136,6 +137,7 @@ function init_question() {
         } 
     else if (currentQuestion.type === "childcaremen") {
         optionsContainer.innerHTML = `
+            <button class="button" onclick="next_question(0)" style="background-color: #bbbbbb;">Not a Man</button> <br>
             <button class="button" onclick="next_question(1)" style="background-color: #1b5e20;">Almost all</button> <br>
             <button class="button" onclick="next_question(0.75)" style="background-color: #4caf50;">Half or more</button> <br>
             <button class="button" onclick="next_question(-0.5)" style="background-color: #f44336;">A bit</button> <br>
