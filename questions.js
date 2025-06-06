@@ -15,7 +15,7 @@ questions =  [
     {"id": 13, "question": "Gender should be abolished.", "effects": {"is": -1}, "type": "default"},
     {"id": 14, "question": "Neopronouns or xenogenders aren't legitimate.", "effects": {"is": 1}, "type": "default"},
     {"id": 15, "question": "The family should be abolished.", "effects": {"is": -1}, "type": "default"},
-    {"id": 16, "question": "The family is the most important unit in society.", "effects": {"is": -1}, "type": "default"},
+    {"id": 16, "question": "The family is the most important unit in society.", "effects": {"is": 1}, "type": "default"},
     {"id": 17, "question": "Parents should hold absolute power over their children, as they are older and more experienced.", "effects": {"is": 1}, "type": "default"},
     {"id": 18, "question": "Borders and nation-states should be abolished.", "effects": {"is": -1}, "type": "default"},
     {"id": 19, "question": "Deportation is legitimate, even if no crime other than overstaying a visa has been committed.", "effects": {"is": 1}, "type": "default"},
