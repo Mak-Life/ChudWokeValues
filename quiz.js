@@ -236,7 +236,7 @@ function percentageCalculation() {
         if (effect === "acts") {
             // account for gender specific questions
             percentages[effect] = max[effect] > 2 
-                ? ((scores[effect] * 10) / (max[effect] - 2)).toFixed(2) : 0;
+                ? ((scores[effect] * 10) / (max[effect] - 3)).toFixed(2) : 0;
         } else {
             percentages[effect] = max[effect] > 0 
                 ? ((scores[effect] * 10) / max[effect]).toFixed(2) : 0;
